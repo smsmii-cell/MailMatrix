@@ -1,58 +1,63 @@
 body {
-font-family: 'Courier New', monospace;
-background-color: #c0c0ff; /* soft Y2K blue */
-color: #000;
+font-family: Arial, sans-serif;
+background-color: #c0c0ff;
+margin: 0;
+}
+
+.gmail-container {
+display: flex;
+height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+width: 250px;
+background-color: #ececff;
+border-right: 2px solid #ff00ff;
+padding: 10px;
+overflow-y: auto;
+}
+
+.sidebar h2 {
 text-align: center;
 }
 
-h1 {
-font-size: 28px;
-color: #0000aa;
-text-shadow: 1px 1px #fff;
-margin-top: 40px;
-}
-
-.login-container {
-margin-top: 100px;
-background: #ffffffcc;
-padding: 20px;
-width: 260px;
-border: 2px solid #ff00ff;
-border-radius: 8px;
-margin-left: auto;
-margin-right: auto;
-}
-
-input, textarea {
-display: block;
-margin: 12px auto;
+/* Messages list */
+#message-list div {
 padding: 8px;
-width: 80%;
-border: 2px solid #ff00ff;
-background-color: #fff;
-color: #000;
-}
-
-button {
-padding: 8px 16px;
-border: 2px solid #00ffff;
-background-color: #ff00ff;
-color: #fff;
+border-bottom: 1px solid #ff00ff;
 cursor: pointer;
-font-weight: bold;
-transition: 0.15s;
 }
 
-button:hover {
-background-color: #00ffff;
-color: #000;
+/* Message panel */
+.message-panel {
+flex: 1;
+display: flex;
+flex-direction: column;
+padding: 10px;
+background-color: #fff;
 }
 
 #emails {
-margin: 20px auto;
-width: 80%;
-background: #fff;
+flex: 1;
+overflow-y: auto;
 border: 2px solid #0000ff;
 padding: 10px;
-min-height: 150px;
+margin-bottom: 10px;
+}
+
+textarea {
+width: 100%;
+height: 60px;
+margin-bottom: 5px;
+border: 2px solid #ff00ff;
+padding: 5px;
+}
+
+button {
+padding: 8px;
+background-color: #ff00ff;
+color: white;
+border: 2px solid #00ffff;
+cursor: pointer;
 }
