@@ -23,8 +23,3 @@ if (
 email === localStorage.getItem('gmailEmail') &&
 password === localStorage.getItem('gmailPassword')
 ) {
-window.location.href = "inbox.html";
-} else {
-alert("Incorrect email or password.");
-}
-});
