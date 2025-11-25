@@ -1,0 +1,58 @@
+body {
+font-family: 'Courier New', monospace;
+background-color: #c0c0ff; /* soft Y2K blue */
+color: #000;
+text-align: center;
+}
+
+h1 {
+font-size: 28px;
+color: #0000aa;
+text-shadow: 1px 1px #fff;
+margin-top: 40px;
+}
+
+.login-container {
+margin-top: 100px;
+background: #ffffffcc;
+padding: 20px;
+width: 260px;
+border: 2px solid #ff00ff;
+border-radius: 8px;
+margin-left: auto;
+margin-right: auto;
+}
+
+input, textarea {
+display: block;
+margin: 12px auto;
+padding: 8px;
+width: 80%;
+border: 2px solid #ff00ff;
+background-color: #fff;
+color: #000;
+}
+
+button {
+padding: 8px 16px;
+border: 2px solid #00ffff;
+background-color: #ff00ff;
+color: #fff;
+cursor: pointer;
+font-weight: bold;
+transition: 0.15s;
+}
+
+button:hover {
+background-color: #00ffff;
+color: #000;
+}
+
+#emails {
+margin: 20px auto;
+width: 80%;
+background: #fff;
+border: 2px solid #0000ff;
+padding: 10px;
+min-height: 150px;
+}
